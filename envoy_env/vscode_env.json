@@ -1,0 +1,5 @@
+{
+    "ENVOY_ALLOWLIST": [
+        "PYTHONPATH"
+    ]
+}

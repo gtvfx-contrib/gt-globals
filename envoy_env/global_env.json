@@ -1,0 +1,6 @@
+{
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "ENVOY_ALLOWLIST": [
+
+    ]
+}
