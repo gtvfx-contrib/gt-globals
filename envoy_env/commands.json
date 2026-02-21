@@ -1,4 +1,10 @@
 {
+    "python": {
+        "environment": [
+            "python_env.json"
+        ],
+        "alias": ["python"]
+    },
     "vscode": {
         "environment": [
             "python_env.json",
