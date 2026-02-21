@@ -1,6 +1,5 @@
 {
     "PYTHONDONTWRITEBYTECODE": "1",
-    "GIT_PYTHON_GIT_EXECUTABLE": "C:/Program Files/Git/cmd/git.exe",
     "ENVOY_ALLOWLIST": [
         "GIT_PYTHON_GIT_EXECUTABLE"
     ]
