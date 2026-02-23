@@ -1,6 +1,9 @@
 {
-    "PYTHONDONTWRITEBYTECODE": "1",
-    "ENVOY_ALLOWLIST": [
+    "environment": {
+        "+=PYTHONPATH": "${__BUNDLE__}/py",
+        "+=PATH": "${__BUNDLE__}/bin"
+    },
+    "environment_allowlist": [
         "GIT_PYTHON_GIT_EXECUTABLE"
     ]
 }
