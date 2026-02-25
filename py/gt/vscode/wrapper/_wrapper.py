@@ -1,4 +1,4 @@
-"""VS Code wrapper — bundles-config pre-generation.
+﻿"""VS Code wrapper — bundles-config pre-generation.
 
 Discovers all envoy bundles under ``ENVOY_BNDL_ROOTS`` and writes the result
 to a ``local_bundles.json`` file in a user-local directory.  The file is then
@@ -23,7 +23,7 @@ import shutil
 import subprocess
 from pathlib import Path
 
-import gt.envoy as envoy
+import envoy
 
 log = logging.getLogger(__name__)
 
@@ -190,7 +190,7 @@ def resolve_code_exe() -> str:
 # Launcher
 # ---------------------------------------------------------------------------
 
-def launch_vscode(extra_args: list[str]) -> subprocess.Popen:
+def launch(extra_args: list[str]) -> subprocess.Popen:
     """Generate ``local_bundles.json`` (if stale) and spawn VS Code.
 
     The subprocess inherits the current process environment with
@@ -214,7 +214,7 @@ def launch_vscode(extra_args: list[str]) -> subprocess.Popen:
 
     # Inject ENVOY_BUNDLES_CONFIG into the current environment before spawning
     # so it is visible to VS Code and to any envoy commands run from its
-    # terminals.  proc.spawn with inherit_env=True copies os.environ, so
+    # terminals. envoy.proc.spawn with inherit_env=True copies os.environ, so
     # setting the variable here is sufficient — no separate env dict needed.
     os.environ['ENVOY_BUNDLES_CONFIG'] = str(bundles_config)
 

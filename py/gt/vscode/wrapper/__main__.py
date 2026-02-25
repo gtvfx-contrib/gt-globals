@@ -40,7 +40,7 @@ def main() -> None:
     extra_args = sys.argv[1:]
 
     try:
-        proc = wrapper.launch_vscode(extra_args)
+        proc = wrapper.launch(extra_args)
     except FileNotFoundError as exc:
         log.error("%s", exc)
         sys.exit(1)
