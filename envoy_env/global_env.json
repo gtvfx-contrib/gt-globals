@@ -4,6 +4,8 @@
         "+=PATH": "${__BUNDLE__}/bin"
     },
     "environment_allowlist": [
-        "GIT_PYTHON_GIT_EXECUTABLE"
+        "GIT_PYTHON_GIT_EXECUTABLE",
+        "PYTHONPATH",
+        "PATH"
     ]
 }

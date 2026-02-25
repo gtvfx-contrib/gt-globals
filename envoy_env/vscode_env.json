@@ -1,5 +1,3 @@
 {
-    "ENVOY_ALLOWLIST": [
-        "PYTHONPATH"
-    ]
+    "VSCODE_EXE": "C:/Users/gf_th/AppData/Local/Programs/Microsoft VS Code/Code.exe"
 }

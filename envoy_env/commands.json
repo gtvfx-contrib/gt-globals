@@ -10,6 +10,6 @@
             "python_env.json",
             "vscode_env.json"
         ],
-        "alias": ["C:/Users/gf_th/AppData/Local/Programs/Microsoft VS Code/Code.exe", "--wait"]
+        "alias": ["python", "-m", "gt.vscode.wrapper"]
     }
 }
