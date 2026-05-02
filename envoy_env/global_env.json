@@ -1,7 +1,6 @@
 {
     "environment": {
-        "+=PYTHONPATH": "${__BUNDLE__}/py",
-        "+=PATH": "${__BUNDLE__}/bin"
+        "+=PYTHONPATH": "${__BUNDLE__}/py"
     },
     "environment_allowlist": [
         "GIT_PYTHON_GIT_EXECUTABLE",
