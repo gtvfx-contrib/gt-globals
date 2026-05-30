@@ -2,7 +2,8 @@
     "vscode": {
         "environment": [
             "python_env.json",
-            "vscode_env.json"
+            "vscode_env.json",
+            "ide_env.json"
         ],
         "alias": ["python", "-m", "gt.vscode.wrapper"]
     }
