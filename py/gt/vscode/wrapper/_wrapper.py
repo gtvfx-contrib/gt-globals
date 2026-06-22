@@ -117,7 +117,7 @@ def write_local_bundles(*, force: bool = False) -> Path:
         return LOCAL_BUNDLES_PATH
 
     log.debug("Scanning for envoy bundles under ENVOY_BNDL_ROOTS...")
-    bundles = envoy.discover_bundles_auto()
+    bundles = envoy.discoverBundlesAuto()
     bundle_paths = [str(b.root) for b in bundles]
 
     _CONFIG_DIR.mkdir(parents=True, exist_ok=True)
