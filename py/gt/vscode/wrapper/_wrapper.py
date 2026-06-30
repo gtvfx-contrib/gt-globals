@@ -219,4 +219,4 @@ def launch(extra_args: list[str]) -> subprocess.Popen:
     os.environ['ENVOY_BUNDLES_CONFIG'] = str(bundles_config)
 
     log.debug("Spawning VS Code: %s %s", code_exe, extra_args)
-    return envoy.proc.spawn([code_exe] + list(extra_args), inherit_env=True)
+    return envoy.proc.spawn([code_exe] + list(extra_args))
