@@ -4,6 +4,8 @@
     },
     "environment_allowlist": [
         "GIT_PYTHON_GIT_EXECUTABLE",
-        "PYTHONDONTWRITEBYTECODE"
+        "PYTHONDONTWRITEBYTECODE",
+        "OLLAMA_API_BASE",
+        "OLLAMA_CONTEXT_LENGTH"
     ]
 }
